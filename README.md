@@ -8,12 +8,12 @@ One-time setup:
 
 ```bash
 # Trust the signing key
-curl -fsSL https://msegoviadev.github.io/pacman-repo/msegoviadev.asc | sudo pacman-key --add -
+curl -fsSL https://msegovia.dev/pacman-repo/msegoviadev.asc | sudo pacman-key --add -
 sudo pacman-key --lsign-key ABD517389B8A1447971AE05F7A1E0EC939A79CBC
 
 # Add the repository to /etc/pacman.conf
 [msegoviadev]
-Server = https://msegoviadev.github.io/pacman-repo/$arch
+Server = https://msegovia.dev/pacman-repo/$arch
 
 # Refresh and install
 sudo pacman -Sy
